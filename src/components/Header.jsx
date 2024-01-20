@@ -10,6 +10,9 @@ export default function Header() {
       input.current.value = "";
     } else {
       input.current.className = "error";
+      setTimeout(() => {
+        input.current.className = "";
+      }, 3000);
       return;
     }
   }
