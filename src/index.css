@@ -35,8 +35,7 @@ header h1 {
   font-size: 40px;
 }
 header p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font: 900;
   font-size: 23px;
 }
