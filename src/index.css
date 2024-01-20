@@ -107,7 +107,7 @@ header p {
 .error {
   background-color: rgb(128, 78, 78);
   padding: 6px 2px;
-  animation: inputError 2s ease-in-out infinite;
+  animation: inputError 1s ease-in-out infinite;
 }
 @keyframes inputError {
   0% {
