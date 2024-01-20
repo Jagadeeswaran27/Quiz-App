@@ -3,8 +3,15 @@ export default function Header() {
   const input = useRef();
   const [name, setName] = useState(null);
   function handleSetName() {
-    setName(input.current.value);
-    input.current.value = "";
+    console.log(input.current.value.length);
+    if (input.current.value.length > 1) {
+      setName(input.current.value);
+      input.current.className = undefined;
+      input.current.value = "";
+    } else {
+      input.current.className = "error";
+      return;
+    }
   }
   return (
     <header>
