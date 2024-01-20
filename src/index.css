@@ -141,6 +141,7 @@ header p {
   header h1 {
     font-size: 30px;
   }
+  .error,
   input {
     padding: 3px 2px;
     width: 40%;
@@ -179,8 +180,9 @@ header p {
     font-size: 12px;
     width: 40%;
   }
+  .error,
   input {
-    padding: 2px;
+    padding: 3px 2px;
   }
   .setName {
     font-size: 13px;
