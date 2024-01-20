@@ -104,24 +104,10 @@ header p {
   cursor: pointer;
   border-radius: 10px;
 }
-input:focus {
-  border: 1px solid #1c2730; /* Add a default border */
-  outline: none; /* Disable the default outline */
-  background-color: #3f5b6d;
-  padding: 6px 2px;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border-radius: 4px;
-  font-size: 1.2rem;
-}
 .error {
   background-color: rgb(128, 78, 78);
   padding: 6px 2px;
   animation: inputError 2s ease-in-out infinite;
-}
-.error:focus {
-  animation: none;
 }
 @keyframes inputError {
   0% {

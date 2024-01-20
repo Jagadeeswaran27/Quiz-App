@@ -12,8 +12,13 @@ export default function Header() {
       input.current.className = "error";
       setTimeout(() => {
         input.current.className = "";
-      }, 3000);
+      }, 2000);
       return;
+    }
+  }
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      handleSetName();
     }
   }
   return (
@@ -25,8 +30,13 @@ export default function Header() {
       ) : (
         <p>Enter the Candidate Name</p>
       )}
-      <input type="text" ref={input} defaultValue={name} />
-      <button className="setName" onClick={handleSetName}>
+      <input
+        type="text"
+        ref={input}
+        defaultValue={name}
+        onKeyDown={handleKeyPress}
+      />
+      <button type="submit" className="setName" onClick={handleSetName}>
         Set Name
       </button>
     </header>
